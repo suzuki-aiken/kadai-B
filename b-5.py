@@ -21,8 +21,11 @@ print(counter2.value)  # -1
 counter2.count_down()
 print(counter2.value)  # -5
 """
+
+
 class MyCounterV3:
-    def __init__(self):
+    def __init__(self, value, step):
+
 
 def main():
     pass
