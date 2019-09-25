@@ -12,10 +12,18 @@ circle3 = Circle(radius=3)
 print(circle3.area())  # 28.27
 print(circle3.perimeter())  # 1 8.85
 """
+import math
 
 
 class Circle:
-    def __init__(self,area,perimeter):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return f'{math.pi * (self.radius ** 2):.2f}'
+
+    def perimeter(self):
+        return f'{2 * math.pi * self.radius:.2f}'
 
 
 def main():
