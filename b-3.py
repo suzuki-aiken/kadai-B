@@ -20,7 +20,14 @@ counter2.count_up()
 print(counter2.value)  # 9
 """
 
-class MyCounterV1
+
+class MyCounterV1:
+    def __init__(self, value):
+        self.value = value
+
+    def count_up(self):
+        self.value+=1
+        return f'{self.value}'
 
 def main():
     counter1 = MyCounterV1(value=0)
@@ -40,6 +47,7 @@ def main():
 
     counter2.count_up()
     print(counter2.value)  # 9
+
 
 if __name__ == '__main__':
     main()
